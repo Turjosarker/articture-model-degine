@@ -4,3 +4,39 @@
     font-optical-sizing: auto;
     
   }
+  /* shered style */
+  .display-flex{
+    display: flex;
+  padding: 0 80px;
+   
+  }
+  .Dark-2{
+    color: #424242;
+  }
+  .Dark-3{
+    color: #727272;
+  }
+  .bg-color{
+    background-color: rgba(255, 144, 14, 0.1);
+  }
+
+/* header style */
+
+  /* navber style */
+  .navber{
+    justify-content: space-between;
+  }
+  .nav-item{
+    list-style: none;
+    margin-right: 30px;
+  }
+.nav-link{
+    
+    text-decoration: none;
+    font-weight: 600;
+}
+.banner, .navber{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
