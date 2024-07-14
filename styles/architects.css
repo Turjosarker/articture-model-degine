@@ -7,7 +7,7 @@
   /* shered style */
   .display-flex{
     display: flex;
-  padding: 0 80px;
+    margin: 0 auto;
    
   }
   .Dark-2{
@@ -19,12 +19,28 @@
   .bg-color{
     background-color: rgba(255, 144, 14, 0.1);
   }
+  .btn-parimary{
+    border-radius: 8px;
+    background-color: rgb(255, 144, 14);
+    color: white;
+    padding: 21px 24px 20px 25px;
+    Font-weight:600;
+    Font-size:1.25rem;
+    border: none;
+ 
+  }
 
 /* header style */
 
   /* navber style */
   .navber{
     justify-content: space-between;
+    align-items: center;
+  }
+  .brand{
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0 auto;
   }
   .nav-item{
     list-style: none;
@@ -38,5 +54,28 @@
 .banner, .navber{
     max-width: 1920px;
     margin: 0 auto;
+}
+/* banner style */
+.banner-container{
+    max-width:850px ;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-title{
+    font-weight: 700;
+    font-size: 4rem;
+}
+.banner-image{
+    width: 100%;
+    margin-bottom: 50px;
+}
+/* Responsive media screen */
+@media screen and (max-width:576px) {
+    .navber, .nav-link{
+        flex-direction: column;
+        gap: 10px;
+    }
+    
 }
 
