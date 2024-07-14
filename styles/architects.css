@@ -10,6 +10,9 @@
     margin: 0 auto;
    
   }
+  .text-parimary{
+    color: #FF900E;
+  }
   .Dark-2{
     color: #424242;
   }
@@ -28,6 +31,13 @@
     Font-size:1.25rem;
     border: none;
  
+  }
+  main{
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+  section{
+   margin-top: 130px;
   }
 
 /* header style */
@@ -65,17 +75,64 @@
 .banner-title{
     font-weight: 700;
     font-size: 4rem;
+   
 }
 .banner-image{
     width: 100%;
-    margin-bottom: 50px;
+}
+/* main part ar Features plan style */
+.teams{
+   align-items: center;
+  
+}
+.image-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 130px;
+}
+.our-features{
+    margin-left: 73px;
+    max-width: 537px;
+
+}
+.features-head{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+#Quick{
+    font-weight: 500;
+}
+.features-decription{
+    margin-bottom: 32px;
+  word-spacing: 5px;
 }
 /* Responsive media screen */
 @media screen and (max-width:576px) {
-    .navber, .nav-link{
+    .navber,
+    .nav-link,
+    .teams{
         flex-direction: column;
         gap: 10px;
     }
+    .image-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .our-features{
+        margin: 20px;
+    }
     
 }
+    /*  medium devices Responsive */
+
+    @media screen and (min-width:576px) and (max-width:992px) {
+        .teams{
+            flex-direction: column;
+        }
+        .our-features{
+            margin:20px auto;
+        }
+        
+    }
+
 
