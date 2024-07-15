@@ -157,6 +157,26 @@
  
 }
 
+
+/* Our Sponspors style */
+.sponsor-info{
+max-width: 542px;
+margin: 50px auto;
+text-align: center;
+}
+.sponsor-title{
+
+}
+.sponsor-companis{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  
+}
+.sponsor-companis img{
+  filter: grayscale(100%);
+  border:1px dashed #319DFD ;
+}
+
 /* Responsive media screen */
 @media screen and (max-width:576px) {
     .navber,
@@ -167,12 +187,16 @@
         gap: 10px;
        
     }
-    .image-container, .facts-container{
+    .image-container, .facts-container, .sponsor-companis{
         grid-template-columns: 1fr;
     }
    .facts-container{
       justify-content: center;
      gap: 24px;
+    }
+    .sponsor-companis{
+      justify-items: center;
+      gap: 50px;
     }
     .section-title{
       padding: 8px;
@@ -193,6 +217,11 @@
         }
         .our-features{
             margin:20px auto;
+        }
+        .sponsor-companis, .facts-container{
+          grid-template-columns: repeat(2, 1fr);
+          gap: 50px;
+          justify-items: center;
         }
         
     }
