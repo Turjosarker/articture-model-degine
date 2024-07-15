@@ -213,6 +213,18 @@ text-align: center;
   filter: grayscale(100%);
   border:1px dashed #319DFD ;
 }
+/* footer style */
+.footer{
+  background-color:#FFF4E7 ;
+  color: #424242;
+ 
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+
+}
 
 /* Responsive media screen */
 @media screen and (max-width:576px) {
@@ -230,13 +242,16 @@ text-align: center;
     }
    .facts-container{
       justify-content: center;
-     gap: 24px;
+      gap: 24px;
     }
     .sponsor-companis{
       justify-items: center;
       gap: 50px;
     }
-    .section-title, .features-card, #experience-badge{
+    .section-title, 
+ 
+    .features-card, 
+    #experience-badge{
       padding: 8px;
     }
     #experience-badge{
@@ -246,7 +261,7 @@ text-align: center;
     .our-features{
         margin: 20px;
     }
-    #experience-badge{
+    #experience-badge, .footer{
       margin-top: 20px;
       margin-left: 20px;
     }
